@@ -115,13 +115,6 @@ class AnimeFlv:
         """
         episodes = []
 
-        for element in elements:
-
-            id = element.select_one("a")["href"]
-            name = element.select_one("a p").string
-            anime = element.select_one("a h3.Title").string
-            episodes.append(EpisodeInfo(id=id, name=name ,anime=anime))
-
         return episodes
     # ----
 
