@@ -1,2 +1,4 @@
 # Environment folders:
 venv/
+# Python folders:
+__pycache__
